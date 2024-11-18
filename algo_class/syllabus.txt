@@ -1,0 +1,108 @@
+Course: Introduction to Data Structures and Algorithms
+
+
+Module 1: Fundamentals and Complexity Analysis
+
+What are Data Structures and Algorithms?
+Introduction to Big O Notation
+Time and Space Complexity
+Best, Average, and Worst Cases
+Practice analyzing simple code
+
+
+Module 2: Basic Data Structures
+
+Arrays
+
+One-dimensional arrays
+Multi-dimensional arrays
+Array operations and complexity
+Dynamic arrays (Lists in Python)
+
+
+Strings
+
+String manipulation
+Common string operations
+String algorithms
+
+
+Linked Lists
+
+Singly Linked Lists
+Doubly Linked Lists
+Basic operations (insert, delete, traverse)
+Common problems and solutions
+
+
+Stacks and Queues
+
+Stack operations and applications
+Queue operations and applications
+Implementation using arrays and linked lists
+Priority Queues
+
+Module 3: Intermediate Data Structures
+
+Hash Tables
+
+Hash functions
+Collision resolution
+Applications and common problems
+Dictionaries in Python
+
+
+Trees
+
+Binary Trees
+Binary Search Trees (BST)
+Tree traversal algorithms
+Balanced trees introduction
+
+
+Heaps
+
+Min/Max Heaps
+Heap operations
+Heapify algorithm
+Priority Queue implementation
+
+Module 4: Basic Algorithms
+
+Searching Algorithms
+
+Linear Search
+Binary Search
+Problems and variations
+
+
+Sorting Algorithms
+
+Bubble Sort
+Selection Sort
+Insertion Sort
+Merge Sort
+Quick Sort
+Understanding when to use each
+
+Module 5: Algorithm Strategies
+
+Recursion
+
+Understanding recursion
+Base cases and recursive cases
+Common recursive problems
+Converting recursion to iteration
+
+
+Basic Algorithm Strategies
+
+Brute Force
+Two-pointer technique
+Sliding Window
+Divide and Conquer
+
+
+
+
+
