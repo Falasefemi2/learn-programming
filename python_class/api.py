@@ -1,48 +1,58 @@
+# Execution and Output
+# If you run the above code:
+
+# GET Request:
+
+# Fetches and prints the first 5 posts from the jsonplaceholder API.
+# POST Request:
+
+# Sends the payload to the API and prints the response confirming the data is sent.
+# Filtered GET with Query Parameters:
+
+# Retrieves comments for the postId 1 and displays the first 3.
+
+
 import requests
 
-# Example API endpoint for GET and POST
+# === GET Request ===
 url = "https://jsonplaceholder.typicode.com/posts"
 
-# --- GET Request ---
+# Make a GET request
 response = requests.get(url)
 
-# Check if the GET request was successful
 if response.status_code == 200:
     data = response.json()  # Convert the response to JSON
-    print("GET Request Successful!")
-    print("First 5 Posts:")
-    print(data[:5])  # Print the first 5 posts
+    print("=== GET Request Output (First 5 Posts) ===")
+    for post in data[:5]:
+        print(post)
 else:
-    print(f"Failed to fetch data. Status code: {response.status_code}")
+    print(f"GET request failed. Status code: {response.status_code}")
 
-# --- POST Request ---
+# === POST Request ===
 payload = {
     "title": "API Tutorial",
     "body": "Learning to work with APIs in Python",
     "userId": 1
 }
 
-response = requests.post(url, json=payload)
+response_post = requests.post(url, json=payload)
 
-# Check the response of the POST request
-if response.status_code == 201:  # 201 Created
-    print("\nPOST Request Successful!")
-    print("Response:")
-    print(response.json())  # Print the server's response
+if response_post.status_code == 201:  # 201 Created
+    print("\n=== POST Request Output ===")
+    print(response_post.json())
 else:
-    print(f"Failed to send data. Status code: {response.status_code}")
+    print(f"POST request failed. Status code: {response_post.status_code}")
 
-# --- Handling Query Parameters ---
+# === Filtered GET with Query Parameters ===
 url_comments = "https://jsonplaceholder.typicode.com/comments"
-params = {"postId": 1}  # Query parameter to filter comments by post ID
+params = {"postId": 1}  # Filter by postId=1
 
-response = requests.get(url_comments, params=params)
+response_filtered = requests.get(url_comments, params=params)
 
-# Check if the filtered GET request was successful
-if response.status_code == 200:
-    data = response.json()
-    print("\nFiltered Data (First 3 Comments):")
-    for comment in data[:3]:  # Display only the first 3 comments
-        print(f"{comment['name']}: {comment['body']}")
+if response_filtered.status_code == 200:
+    filtered_data = response_filtered.json()
+    print("\n=== Filtered GET Request Output (First 3 Comments) ===")
+    for comment in filtered_data[:3]:
+        print({"name": comment["name"], "body": comment["body"]})
 else:
-    print("Failed to fetch filtered data.")
+    print(f"Filtered GET request failed. Status code: {response_filtered.status_code}")
