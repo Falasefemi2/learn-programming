@@ -78,12 +78,11 @@ def mark_task_completed():
         if 0 <= index < len(task_list):
             task_list[index].mark_completed()
             print(f"Task marked completed: {task_list[index]}")
-            save_task()  # Immediately save the updated task list
+            save_task()  # Save the updated tasks to the JSON file
         else:
             print("Invalid index.")
     except ValueError:
         print("Enter a valid index.")
-
 
 
 

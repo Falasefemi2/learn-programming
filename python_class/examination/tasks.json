@@ -1,13 +1,13 @@
 [
     {
-        "title": "Dancing",
-        "description": "dancing with group",
-        "due_date": "25-11-2024",
+        "title": "sport",
+        "description": "play ball",
+        "due_date": "26-11-2024",
         "completed": true
     },
     {
-        "title": "Cooking",
-        "description": "cooking rice",
+        "title": "cooking",
+        "description": "rice and beans",
         "due_date": "26-11-2024",
         "completed": true
     }
