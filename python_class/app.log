@@ -1,0 +1,30 @@
+2024-11-28 12:18:47,609 - DEBUG - This is a debug message.
+2024-11-28 12:18:47,609 - INFO - This is an info message.
+2024-11-28 12:18:47,609 - WARNING - This is a warning message.
+2024-11-28 12:18:47,609 - ERROR - This is an error message.
+2024-11-28 12:18:47,609 - CRITICAL - This is a critical message.
+2024-11-28 12:19:42,883 - DEBUG - This is a debug message.
+2024-11-28 12:19:42,883 - INFO - This is an info message.
+2024-11-28 12:19:42,883 - WARNING - This is a warning message.
+2024-11-28 12:19:42,883 - ERROR - This is an error message.
+2024-11-28 12:19:42,883 - CRITICAL - This is a critical message.
+2024-11-28 12:19:42,883 - DEBUG - Debugging details.
+2024-11-28 12:19:42,883 - INFO - Informational message.
+2024-11-28 12:19:42,883 - WARNING - This is a warning!
+2024-11-28 12:19:42,883 - ERROR - An error has occurred!
+2024-11-28 12:19:42,883 - CRITICAL - Critical issue!
+2024-11-28 12:21:55,351 - DEBUG - This is a debug message.
+2024-11-28 12:21:55,351 - INFO - This is an info message.
+2024-11-28 12:21:55,351 - WARNING - This is a warning message.
+2024-11-28 12:21:55,351 - ERROR - This is an error message.
+2024-11-28 12:21:55,351 - CRITICAL - This is a critical message.
+2024-11-28 12:21:55,351 - DEBUG - Debugging details.
+2024-11-28 12:21:55,351 - INFO - Informational message.
+2024-11-28 12:21:55,351 - WARNING - This is a warning!
+2024-11-28 12:21:55,351 - ERROR - An error has occurred!
+2024-11-28 12:21:55,351 - CRITICAL - Critical issue!
+2024-11-28 12:21:55,351 - DEBUG - Debugging details.
+2024-11-28 12:21:55,351 - INFO - Log in successful.
+2024-11-28 12:21:55,351 - WARNING - This is a warning!
+2024-11-28 12:21:55,351 - ERROR - An error has occurred!
+2024-11-28 12:21:55,351 - CRITICAL - Critical issue!
