@@ -35,7 +35,7 @@ while True:
     print("\nTask Manager")
     print("1. View Tasks")
     print("2. Add Tasks")
-    print("3. Updare Task")
+    print("3. Update Task")
     print("4. Delete Task")
     print("5. Exit")
     
