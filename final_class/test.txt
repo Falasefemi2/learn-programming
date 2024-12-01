@@ -1,0 +1,47 @@
+Project: Contact Book
+Description:
+Build a command-line Contact Book that lets users manage their personal or professional contacts. The program should allow the user to add, view, search, update, and delete contacts. All data should be saved to a JSON file so that it persists between runs.
+
+Features:
+View Contacts:
+
+Display all saved contacts in a clean and user-friendly format.
+Add a New Contact:
+
+Allow users to input a contact's name, phone number, and email.
+Search for a Contact:
+
+Allow users to search for a contact by name or phone number.
+Update a Contact:
+
+Modify the details (name, phone, email) of an existing contact.
+Delete a Contact:
+
+Remove a contact from the list by providing their name or phone number.
+Save and Load:
+
+Save all contacts to a JSON file and load them on program start.
+Error Handling:
+
+Handle invalid inputs gracefully.
+Suggested Structure:
+1. Functions
+display_contacts(contacts)
+add_contact(contacts)
+search_contact(contacts)
+update_contact(contacts)
+delete_contact(contacts)
+save_contacts(file_name, contacts)
+load_contacts(file_name)
+2. Flow
+Prompt the user with a menu (similar to your Task Manager).
+Perform the action corresponding to their choice.
+Challenges to Include:
+Validate Input:
+Ensure phone numbers are numeric and emails have valid formats (e.g., contain "@" and ".").
+Handle Duplicates:
+Prevent duplicate phone numbers or emails from being added.
+File Management:
+Automatically create a new JSON file if it doesn't exist.
+Edge Cases:
+Handle scenarios like empty contact lists or invalid search terms.
