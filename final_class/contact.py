@@ -1,4 +1,5 @@
 import os
+import re
 import json
 
 def display_contacts(contacts):
@@ -9,19 +10,44 @@ def display_contacts(contacts):
     else:
         print("No contacts found!!!")
         
+def validate_phone_number(phone):
+    """Validate phone number to ensure it starts with +234 and is followed by 10 digits."""
+    pattern = r"^\+234\d{10}$"
+    return bool(re.match(pattern, phone))
+
+def validate_email(email):
+    """Validate email address for proper format."""
+    pattern = r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+    return bool(re.match(pattern, email))
+
+        
 def add_contacts(contacts):
     """Add new contacts"""
     name = input("Enter contact name: ").strip()
     phone = input("Enter phone number: ").strip()
     email = input("Enter the email: ").strip()
-    
-    # Validate the uniqueness
+
+    # Validate the inputs
+    if not validate_phone_number(phone):
+        print("Invalid phone number. It should start with +234 and have 10 digits after.")
+        return  # Exit without adding the contact
+
+    if not validate_email(email):
+        print("Invalid email format.")
+        return  # Exit without adding the contact
+
+    # Check for duplicate phone numbers
     if any(contact['phone'] == phone for contact in contacts):
-        print("A contact with this phone number already exits!")
-        return
-    
+        print("A contact with this phone number already exists!")
+        return  # Exit without adding the contact
+
+    # Add contact if all validations pass
     contacts.append({"name": name, "phone": phone, "email": email})
-    print("Contact added successfully!!")
+    print("Contact added successfully!")
+
+
+
+
     
 def save_contacts(file_name, contacts):
     """Save contact to file"""
